@@ -393,21 +393,6 @@ environment_variables = {
 }
 ```
 
-## 💰 Cost Estimation
-
-**Monthly costs (approximate)**:
-
-| Service | Usage | Cost |
-|---------|-------|------|
-| Lambda | 1M requests, 512MB, 5s avg | $5 |
-| API Gateway | 1M requests | $1 |
-| DynamoDB | PAY_PER_REQUEST, 1M requests | $2.50 |
-| S3 | 10GB storage, 100K requests | $0.50 |
-| CloudWatch Logs | 5GB/month | $2.50 |
-| **Total** | | **~$11.50** |
-
-*Development environment with minimal traffic*
-
 ## 📚 Additional Resources
 
 - [Terraform AWS Provider Docs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
@@ -424,7 +409,7 @@ environment_variables = {
 
 ## 📄 License
 
-MIT License - See LICENSE file for details
+This project was developed for an MSc Cloud Solutions course and implements a Telegram bot using AWS Lambda, DynamoDB for chat data storage, and Amazon S3.
 
 ---
 
