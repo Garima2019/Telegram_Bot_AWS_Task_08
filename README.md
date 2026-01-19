@@ -46,6 +46,17 @@ terraform-telegram-bot/
 ├── handler.py                 # Lambda function code
 └── README.md
 ```
+- Variables used everywhere. No hardcoded ARNs or names.
+- Outputs are excellent:
+  - webhook URL
+  - ARNs
+  - names
+  - log groups
+- Remote state:
+  - S3 backend
+  - DynamoDB locking
+  - Encryption + versioning documented
+
 
 ## 🚀 Quick Start
 
@@ -195,7 +206,7 @@ Lambda execution role has **scoped permissions**:
 ✅ **S3**:
 - Actions: PutObject, GetObject, DeleteObject
 - Resource: Specific bucket ARN only
-- Condition: Enforces AES256 encryption
+- Condition: Encryption enforced via condition
 
 ❌ **No wildcards** in actions or resources
 
